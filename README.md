@@ -1,5 +1,9 @@
 # AFNetworking-PromiseKit
 
+Wrapper for the AFHTTPRequestOperation class to return a PromiseKit promise.
+
+Promises clean up the structure of code and provide better data flow
+and error handling especially when using asynchronous methods.
 
 ## Requirements
 * [AFNetworking 1.x](https://github.com/AFNetworking/AFNetworking)
@@ -12,38 +16,53 @@
 
 ## Installation
 
-* Install via [cocoapods](https://github.com/cocoapods/cocoapods)
+### Install via [cocoapods](https://github.com/cocoapods/cocoapods)
 
-```ruby
-platform :ios, '6.0'
+* Add the library to `Podfile`
+  ```ruby
+  platform :ios, '6.0'
 
-pod 'AFNetworking-PromiseKit'
-```
+  pod 'AFNetworking-PromiseKit'
+  ```
+
+* Install pod
+   ```bash
+   pod install
+   ```
+
+### Manual
+
+* Drop `AFHTTPRequestOperation+PromiseKit.h` and `AFHTTPRequestOperation+PromiseKit.m`
+into an XCode project and set the appropriate targets.
 
 ## Usage
 
-* Import the category
+### Import the category
 
-```objective-c
-#import "AFHTTPRequestOperation+PromiseKit.h"
-```
+* Manual install
+  ```objective-c
+  #import "AFNetworking-PromiseKit.h"
+  ```
 
-* Call a typical `AFHTTPRequestOperation` operation class method
-and use the resulting promise.
+* Cocoapods install
+  ```objective-c
+  #import <AFNetworking-PromiseKit/AFNetworking-PromiseKit.h>
+  ```
 
-```objective-c
-NSMutableURLRequest *request = [[AFClient sharedClient] requestWithMethod:@"GET" path:@"/test.json" parameters:nil];
+### Call a typical `AFHTTPRequestOperation` operation class method and use the resulting promise.
+  ```objective-c
+  NSMutableURLRequest *request = [[AFClient sharedClient] requestWithMethod:@"GET" path:@"/test.json" parameters:nil];
 
-[AFJSONRequestOperation promise:request].then(^(AFHTTPRequestOperation *operation, id JSON){
-  NSLog(@"Received: %@", JSON);
-}).catch(^(NSError *error){
-  NSLog(@"Received an error: %@", error);
-});
-``` 
+  [AFJSONRequestOperation promise:request].then(^(AFHTTPRequestOperation *operation, id JSON){
+    NSLog(@"Received: %@", JSON);
+  }).catch(^(NSError *error){
+    NSLog(@"Received an error: %@", error);
+  });
+  ```
 
 ## License
 
-AFNetworking-PromiseKit is licensed under the MIT license. Please see the [license](MIT-LICENSE) for more information.
+[AFNetworking-PromiseKit](https://github.com/cmckni3/AFNetworking-PromiseKit) is licensed under the MIT license. Please see the [license](MIT-LICENSE) for more information.
 
 ## Contributing
 
