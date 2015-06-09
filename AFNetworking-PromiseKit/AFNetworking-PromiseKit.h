@@ -8,4 +8,5 @@
 
 #import <PromiseKit/PromiseKit.h>
 #import <AFNetworking/AFNetworking.h>
+#import <AFNetworking-PromiseKit/AFHTTPRequestOperation+PromiseKit.h>
 
