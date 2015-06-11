@@ -1,5 +1,10 @@
 # AFNetworking-PromiseKit Changelog
 
+## [0.2.4] - 2015-06-11
+
+### Changed
+- Changes `+ (PMKPromise *)promise:` to accept pointers to `NSURLRequest`
+
 ## [0.2.3] - 2015-06-09
 
 ### Changed

@@ -12,6 +12,6 @@
 
 @interface AFHTTPRequestOperation (PromiseKit)
 
-+ (PMKPromise *)promise:(NSMutableURLRequest *)request;
++ (PMKPromise *)promise:(NSURLRequest *)request;
 
 @end

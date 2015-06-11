@@ -11,7 +11,7 @@
 
 @implementation AFHTTPRequestOperation (PromiseKit)
 
-+ (PMKPromise *)promise:(NSMutableURLRequest *)request {
++ (PMKPromise *)promise:(NSURLRequest *)request {
     return [PMKPromise new:^(PMKFulfiller resolve, PMKRejecter reject) {
         id operation = [[[self class] alloc] initWithRequest:request];
         [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {

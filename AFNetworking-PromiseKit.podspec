@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'AFNetworking-PromiseKit'
-  s.version               = '0.2.3'
+  s.version               = '0.2.4'
   s.summary               = 'AFNetworking category for PromiseKit'
   s.description           = <<-DESC
                                Wrapper for the AFHTTPRequestOperation class to
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.social_media_url      = 'https://twitter.com/cmckni3'
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.7'
-  s.source                = { :git => 'https://github.com/cmckni3/AFNetworking-PromiseKit.git', :tag => '0.2.3' }
+  s.source                = { :git => 'https://github.com/cmckni3/AFNetworking-PromiseKit.git', :tag => '0.2.4' }
   s.source_files          = 'AFNetworking-PromiseKit'
   s.requires_arc          = true
   s.dependency 'PromiseKit', '~> 1.5'
