@@ -1,4 +1,7 @@
 # AFNetworking-PromiseKit
+[![Version](https://img.shields.io/cocoapods/v/AFNetworking-PromiseKit.svg?style=flat)](http://cocoapods.org/pods/AFNetworking-PromiseKit)
+[![License](https://img.shields.io/cocoapods/l/AFNetworking-PromiseKit.svg?style=flat)](http://cocoapods.org/pods/AFNetworking-PromiseKit)
+[![Platform](https://img.shields.io/cocoapods/p/AFNetworking-PromiseKit.svg?style=flat)](http://cocoapods.org/pods/AFNetworking-PromiseKit)
 
 Wrapper for the AFHTTPRequestOperation class to return a PromiseKit promise.
 
