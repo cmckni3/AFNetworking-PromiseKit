@@ -48,7 +48,7 @@ and set the appropriate targets.
   #import "AFNetworking-PromiseKit.h"
   ```
 
-* Cocoapods install
+* CocoaPods install
   ```objective-c
   #import <AFNetworking-PromiseKit/AFNetworking-PromiseKit.h>
   ```
