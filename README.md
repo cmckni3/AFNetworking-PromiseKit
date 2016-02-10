@@ -19,7 +19,7 @@ and error handling especially when using asynchronous methods.
 
 ## Installation
 
-### Install via [cocoapods](https://github.com/cocoapods/cocoapods)
+### Install via [CocoaPods](https://github.com/cocoapods/cocoapods)
 
 * Add the library to `Podfile`
   ```ruby
@@ -75,4 +75,3 @@ and set the appropriate targets.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-
