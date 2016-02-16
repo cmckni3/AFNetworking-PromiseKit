@@ -36,7 +36,7 @@ and error handling especially when using asynchronous methods.
 ### Manual
 
 * Drop `AFHTTPRequestOperation+PromiseKit.h`, `AFHTTPRequestOperation+PromiseKit.m`,
-and `AFNetworking-PromiseKit.h` into an XCode project with AFNetworking
+and `AFNetworking-PromiseKit.h` into an Xcode project with AFNetworking
 and set the appropriate targets.
 
 ## Usage
